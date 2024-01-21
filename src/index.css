@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root{
+    --logo-color: #789461;
     --black: #040D12;
     --darker-green: #183D3D;
     --dark-green: #5C8374;
@@ -66,13 +67,14 @@ input {
 .bg-darker-green { background-color: var(--darker-green); }
 .bg-dark-green { background-color: var(--dark-green); }
 .bg-green { background-color: var(--green); }
-.bg-darker-green { background-color: var(--light-green); }
-.bg-darker-green { background-color: var(--lighter-green); }
-.bg-darker-green { background-color: var(--white); }
+.bg-light-green { background-color: var(--light-green); }
+.bg-lighter-green { background-color: var(--lighter-green); }
+.bg-white { background-color: var(--white); }
 
 /* Text colors */
 .text-black { color: var(--black); }
 .text-darker-green { color: var(--darker-green); }
+.text-logo-color { color: var(--logo-color);}
 .text-white { color: var(--white); }
 .text-uppercase { text-transform: uppercase; }
 .text-center { text-align: center; }
