@@ -1,11 +1,11 @@
 import React from 'react'
-import { useGlobalContent } from '../../../content';
-import cover from "../../images/cover.jpg";
-import "./BookList.css";
+import { useGlobalContext } from '../../../src/context';
 import Book from "../BookList/Book";
+import "./BookList.css";
+import cover from "../../images/cover.jpg";
 
 const BookList = () => {
-  const { books, result } = useGlobalContent();
+  const { books, result } = useGlobalContext();
   const bookCovers = books.map((book) => {
     return {
       ...book,

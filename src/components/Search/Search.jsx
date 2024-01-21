@@ -1,17 +1,17 @@
 import React, { useEffect, useRef } from 'react'
 import { TbListSearch } from "react-icons/tb";
 import { useNavigate } from 'react-router-dom';
-import { useGlobalContent } from '../../../content';
+import { useGlobalContext } from '../../../src/context';
 import "./Search.css";
 
 const Search = () => {
-  const { setSearchItem, setResult } = useGlobalContent();
+  const { setSearchItem, setResult } = useGlobalContext();
   const search = useRef('');
   const navigate = useNavigate();
 
   useEffect(() => {search.current.focus()}, [])
 
-  function handleSubmit(text) {
+  const handleSubmit =(text) => {
 
     text.preventDefault();
     let tempSearchItem = search.current.value.trim();

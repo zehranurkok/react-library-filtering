@@ -1,11 +1,10 @@
 import React, { useState, useContext, useEffect, useCallback } from "react";
 const URL = "https://openlibrary.org/search.json?title=";
-const AppContent = React.createContext();
+const AppContext = React.createContext();
 
 const AppProvider = ({children}) => {
-    const [searchItem, setSearchItem] = useState("2023");
+    const [searchItem, setSearchItem] = useState("Van Helsing");
     const [books, setBooks] = useState([]);
-    // const [loading, setLoading] = useState(true);
     const [result, setResult] = useState("");
 
     const fetchBooks = useCallback(async() => {
@@ -51,17 +50,17 @@ const AppProvider = ({children}) => {
     }, [searchItem, fetchBooks])
 
     return (
-        <AppContent.Provider value = {{
+        <AppContext.Provider value = {{
              books, setSearchItem, result, setResult,
         }}>
             {children}
-        </AppContent.Provider>
+        </AppContext.Provider>
     )
     
 }
 
-export const useGlobalContent = () => {
-    return useContext(AppContent);
+export const useGlobalContext = () => {
+    return useContext(AppContext);
 }
 
-export {AppContent, AppProvider}
+export {AppContext, AppProvider}

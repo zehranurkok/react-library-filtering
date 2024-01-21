@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import { AppProvider } from './content';
+import { AppProvider } from './context';
 import Home from './pages/Home/Home';
 import About from './pages/Aboout/About';
-import BookList from './pages/components/BookList/BookList';
-import BookDetails from './pages/components/BookDetails/BookDetails';
+import BookList from './components/BookList/BookList';
+import BookDetails from './components/BookDetails/BookDetails';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

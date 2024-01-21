@@ -45,34 +45,43 @@ const BookDetails = () => {
       <div className="container">
 
         <button className="back-btn flex flex-jc-c" onClick={() => navigate("/book")}>
-          <FaArrowAltCircleLeft size= { 35 }/>
+          <FaArrowAltCircleLeft size={35} />
           <span className="fontweight-6 fontsize-18">Go Back</span>
         </button>
 
         <div className="book-details-content grid">
+
           <div className="book-details-img">
-            <img src= { book?.cover_img }  alt="cover" />
+            <img src={book?.cover_img} alt="cover" />
           </div>
+
           <div className="book-details-info">
+
             <div className="book-details-item title">
-              <span className="fontweight-6 fontsize-24">{ book?.title }</span>
+              <span className="fontweight-6 fontsize-24">{book?.title}</span>
             </div>
+
             <div className="book-details-item description">
-              <span>{ book?.description }</span>
+              <span>{book?.description}</span>
             </div>
+
             <div className="book-details-item">
-            <span className="fontweight-6">Subject Places: </span>
-              <span className="text-italic">{ book?.subject_places }</span>
+              <span className="fontweight-6">Subject Places: </span>
+              <span className="text-italic">{book?.subject_places}</span>
             </div>
+
             <div className="book-details-item">
-            <span className="fontweight-6">Subject Times: </span>
-              <span className="text-italic">{ book?.subject_times }</span>
+              <span className="fontweight-6">Subject Times: </span>
+              <span className="text-italic">{book?.subject_times}</span>
             </div>
+
             <div className="book-details-item">
-            <span className="fontweight-6">Subjects: </span>
-              <span>{ book?.subjects }</span>
+              <span className="fontweight-6">Subjects: </span>
+              <span>{book?.subjects}</span>
             </div>
+
           </div>
+
         </div>
       </div>
     </section>
