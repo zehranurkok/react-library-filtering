@@ -1,7 +1,7 @@
 import React from 'react'
 import { useGlobalContent } from '../../../content';
 import cover from "../../images/cover.jpg";
-import "../BookList/BookList.css";
+import "./BookList.css";
 import Book from "../BookList/Book";
 
 const BookList = () => {

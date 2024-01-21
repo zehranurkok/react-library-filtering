@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import "../BookList/BookList.css";
+import "./BookList.css";
 
 const Book = (book) => {
   return (
