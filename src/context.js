@@ -29,12 +29,7 @@ const AppProvider = ({children}) => {
                 });
 
                 setBooks(newBooks);
-
-                if(newBooks.length > 1){
-                    setResult("Results:");
-                } else {
-                    setResult("Result Not Found")
-                }
+                
             } else {
                 setBooks([]);
                 setResult("Result Not Found");

@@ -5,7 +5,7 @@ import './Header.css';
 
 const Header = () => {
   return (
-    <main className='holder'>
+    <div className='holder'>
       <header className='header'>
         <Navbar />
         <div className="header-content flex flex-jc-c text-center text-white">
@@ -22,7 +22,7 @@ const Header = () => {
           <Search />
         </div>
       </header>
-    </main>
+    </div>
   )
 }
 
