@@ -113,6 +113,8 @@ input {
 
 .flexdirection-col { flex-direction: column; }
 
+.flexwrap {flex-wrap: wrap; }
+
 .flex-jc-sb { justify-content: space-between; }
 .flex-jc-c { justify-content: center; }
 

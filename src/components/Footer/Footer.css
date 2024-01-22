@@ -1,0 +1,9 @@
+.footer {
+    margin: 2rem;
+}
+
+.logo {
+    width: 70px;
+    justify-content: center;
+    color: var(--logo-color);
+}

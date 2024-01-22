@@ -9,7 +9,7 @@ const URL = "https://openlibrary.org/works/";
 const BookDetails = () => {
 
   const { id } = useParams();
-  const [book, setBook] = useState(null);
+  const [ book, setBook ] = useState(null);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -45,7 +45,7 @@ const BookDetails = () => {
       <div className="container">
 
         <button className="back-btn flex flex-jc-c" onClick={() => navigate("/book")}>
-          <FaArrowAltCircleLeft size={35} />
+          <FaArrowAltCircleLeft size={35} style= {{color:"#789461"}} />
           <span className="fontweight-6 fontsize-18">Go Back</span>
         </button>
 
@@ -58,7 +58,7 @@ const BookDetails = () => {
           <div className="book-details-info">
 
             <div className="book-details-item title">
-              <span className="fontweight-6 fontsize-24">{book?.title}</span>
+              <span className="fontweight-6 fontsize-24 text-logo-color">{book?.title}</span>
             </div>
 
             <div className="book-details-item description">
@@ -66,17 +66,17 @@ const BookDetails = () => {
             </div>
 
             <div className="book-details-item">
-              <span className="fontweight-6">Subject Places: </span>
+              <span className="fontweight-6 text-darker-green">Subject Places: </span>
               <span className="text-italic">{book?.subject_places}</span>
             </div>
 
             <div className="book-details-item">
-              <span className="fontweight-6">Subject Times: </span>
+              <span className="fontweight-6 text-darker-green">Subject Times: </span>
               <span className="text-italic">{book?.subject_times}</span>
             </div>
 
             <div className="book-details-item">
-              <span className="fontweight-6">Subjects: </span>
+              <span className="fontweight-6 text-darker-green">Subjects: </span>
               <span>{book?.subjects}</span>
             </div>
 

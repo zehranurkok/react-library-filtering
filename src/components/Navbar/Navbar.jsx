@@ -20,7 +20,7 @@ const Navbar = () => {
       <div className="brand-and-toggler flex flex-jc-sb">
 
         <Link to= "/" className="navbar-brand flex">
-          <img src={ logo } alt="LitVerse Logo" className='logo'/>
+          <img src={ logo } alt="Lit Verse Logo" className='logo'/>
         </Link>
 
         <button type="button" className='navbar-toggler-btn' onClick={handleMenu}>
@@ -30,6 +30,7 @@ const Navbar = () => {
 
       <div className={menu ? "navbar-collapse show-navbar-collapse" : "navbar-collapse"}>
         <ul className="navbar-nav">
+
           <li className="nav-item">
             <Link to="book" className="nav-link text-uppercase fontsize-22 fontweight-6 letterspace-1">Home</Link>
           </li>
@@ -37,6 +38,11 @@ const Navbar = () => {
           <li className="nav-item">
           <Link to="about" className="nav-link text-uppercase fontsize-22 fontweight-6 letterspace-1">About</Link>
           </li>
+
+          <li className="nav-item">
+          <Link to="contact" className="nav-link text-uppercase fontsize-22 fontweight-6 letterspace-1">Contact Us</Link>
+          </li>
+
         </ul>
       </div>
 
